@@ -1,4 +1,14 @@
-
+console.log("ji")
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 $('.navTrigger').click(function () {
     $(this).toggleClass('active');
     console.log("Clicked menu");
@@ -6,9 +16,17 @@ $('.navTrigger').click(function () {
     $("#mainListDiv").fadeIn();
 
 });
-var h = window.innerHeight;
-var nav = document.getElementsByClassName("logo");
-// logo.style.display = "none";
+
+var image = document.getElementsByClassName("gallery")[0].getElementsByTagName("img");
+console.log(image)
+// for(var i=0;i<image.length;i++){
+
+// }
+image[1].addEventListener('click',()=>{
+  // alert("hi")
+  image[1].height = "200px";
+  image[1].width = "200px";
+})
 
 mybutton = document.getElementById("myBtn");
 var arrow = document.getElementById("arrow-right");

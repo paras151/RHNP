@@ -25,7 +25,26 @@ body,
   height: 100vh;
   overflow-x: hidden;
 }
+/* .abt{
+  line-height: 200% !important;
+  text-align: center;
+  font-family: cursive !important;
+  margin-top: 3%;
+  letter-spacing: 0.2rem;
+  padding: 2%;
+  color: white;
+  background-color: #26272b;
+  /* position: absolute; */
+  /* margin-left: 15%;
+  top: 10%;
+  width: 70%;
+  height: 100%;
+} */
 
+.abt h2{
+  stroke-width: 10rem;
+  color: white;
+} */
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500);
 
 /*------------------------------------*/
@@ -42,7 +61,9 @@ body,
   position: relative;
 }
 h2{
+  font-weight: bolder;
     /* color: white; */
+    color: #26272b;
     text-align: center;
     /* font-size: 100px; */
     letter-spacing: 2px;
@@ -63,21 +84,21 @@ h2{
 	background-size:cover;
 }
 .slide2 {
-    background-image: url("https://www.tangyoak.com/wp-content/uploads/2020/02/114e0481c28cc55c7401638164690992.jpg");
+    background-image: url("https://scontent.fixc1-3.fna.fbcdn.net/v/t1.0-9/79127094_2557528814467202_1090835304211808256_o.jpg?_nc_cat=100&_nc_sid=8bfeb9&_nc_ohc=KyaO8U_oxO8AX-m2XQ2&_nc_ht=scontent.fixc1-3.fna&oh=24cd9c02a7edc9cbfc04fd3254b7809f&oe=5F073D33");
   width: 100%;
     height: 100vh;
     background-position: center top;
 	background-size:cover;
 }
 .slide3 {
-  background-image: url("https://scontent.fixc4-1.fna.fbcdn.net/v/t1.0-9/80011681_2570472259839524_2108670389323300864_o.jpg?_nc_cat=102&_nc_sid=8bfeb9&_nc_ohc=zorGNO5YFtkAX-1LrBJ&_nc_ht=scontent.fixc4-1.fna&oh=409ddbd97be598d3939e18312d8f0905&oe=5ED9532E");
+  background-image: url("https://scontent.fixc1-3.fna.fbcdn.net/v/t1.0-9/83856922_2609678662585550_6256673967562555392_o.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_ohc=34y5-DxlVWUAX-Xantt&_nc_ht=scontent.fixc1-3.fna&oh=4121e1583eacd5ba438dfe21c87b1593&oe=5F067065");
   width: 100%;
     height: 100vh;
     background-position: center top;
 	background-size:cover;
 }
 .slide4 {
-  background-image: url("https://scontent.fixc4-1.fna.fbcdn.net/v/t1.0-9/75522003_2540001636219920_7306866215295647744_o.jpg?_nc_cat=110&_nc_sid=8bfeb9&_nc_ohc=jB2cSV43c10AX_jDyqX&_nc_ht=scontent.fixc4-1.fna&oh=87fe1e59f05b07ab66c2d0be9298d404&oe=5EDCBAF7");
+  background-image: url("https://scontent.fixc1-3.fna.fbcdn.net/v/t1.0-0/p180x540/79929253_2566538656899551_5358123533148880896_o.jpg?_nc_cat=100&_nc_sid=8bfeb9&_nc_ohc=dnfdgh-V5lsAX_bgwwq&_nc_ht=scontent.fixc1-3.fna&_nc_tp=6&oh=82b0aa8ab7edc333d051d0596c768dff&oe=5F05E971");
   width: 100%;
     height: 100vh;
     background-position: center top;
@@ -127,24 +148,53 @@ h2{
 
 /* Navbar section */
 section{
-  height: 100vh;
+  /* height: 100vh; */
   
   /* width:80%; */
+}
+span{
+  font-weight: 800;
+}
+.abt{
+  line-height: 200% !important;
+  /* text-align: center; */
+  font-family: cursive !important;
+  /* margin-top: 5%; */
+  letter-spacing: 0.2rem;
+  padding:4% 6%;
+  padding-bottom: 5%;
+  background-color: #26272b;
+  margin-left: 10%;
+  width: 80%;
+  height: 100%;
+  color: white !important;
+  background-color: #26272b;
+
+}
+.abt h2{
+  color: white;
+}
+section p{
+  font-size: 20px;
 }
 section h2{
   
   font-size: 30px;
 }
-.nav {
+#nav {
+  position: fixed;
+  top: 0;
     width: 100%;
-    height: 0px;
-    position: fixed;
+    /* height: 100px; */
+    
+    transition: top 0.6s;
     line-height: 65px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    /* background-color: red */
 }
 
-.nav div.logo p {
+#nav div.logo p {
     float: left;
     font-size: 40px;
     color: white;
@@ -152,24 +202,24 @@ section h2{
     padding-left: 3rem;
 }
 
-.nav div.logo a {
+#nav div.logo a {
     text-decoration: none;
     color: #fff;
     font-family: 'Great Vibes', cursive;
     font-size: 2.5rem;
 }
 
-.nav div.logo a:hover {
+#nav div.logo a:hover {
     color: #00E676;
 }
 
-.nav div.main_list {
-  font-family: 'Oswald', sans-serif;
+#nav div.main_list {
+    font-family: 'Courier New', Courier, monospace;
     height: 65px;
     float: right;
 }
 
-.nav div.main_list ul {
+#nav div.main_list ul {
     width: 100%;
     height: 65px;
     display: flex;
@@ -178,24 +228,24 @@ section h2{
     padding: 0;
 }
 
-.nav div.main_list ul li {
+#nav div.main_list ul li {
     width: auto;
     height: 65px;
     padding: 0;
     padding-right: 3rem;
 }
 
-.nav div.main_list ul li a {
+#nav div.main_list ul li a {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: 'Playfair Display', serif;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-decoration: none;
     color: #fff;
     line-height: 65px;
     font-size: 2.4rem;
 }
 
-.nav div.main_list ul li a:hover {
+#nav div.main_list ul li a:hover {
     /* color: #00E676; */
 }
 
@@ -210,16 +260,16 @@ section h2{
 	background-size:cover;
 }
 
-.navTrigger {
+#navTrigger {
     display: none;
 }
 
-.nav {
+/* #nav {
     padding-top: 20px;
     padding-bottom: 20px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-}
+} */
 
 
 /* Media qurey section */
@@ -231,43 +281,43 @@ section h2{
 }
 
 @media screen and (max-width:768px) {
-    .navTrigger {
+    #navTrigger {
         display: block;
     }
-    .nav div.logo {
+    #nav div.logo {
         margin-left: 15px;
     }
-    .nav div.main_list {
+    #nav div.main_list {
         width: 100%;
         height: 0;
         overflow: hidden;
     }
-    .nav div.show_list {
+    #nav div.show_list {
         height: auto;
         display: none;
     }
-    .nav div.main_list ul {
+    #nav div.main_list ul {
         flex-direction: column;
         width: 100%;
         height: 100vh;
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #111;
+        /* background-color: #111; */
         /*same background color of navbar*/
         background-position: center top;
     }
-    .nav div.main_list ul li {
+    #nav div.main_list ul li {
         width: 100%;
         text-align: right;
     }
-    .nav div.main_list ul li a {
+    #nav div.main_list ul li a {
         text-align: center;
         width: 100%;
         font-size: 3rem;
         padding: 20px;
     }
-    .nav div.media_button {
+    #nav div.media_button {
         display: block;
     }
 }
@@ -276,7 +326,7 @@ section h2{
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
-.navTrigger {
+#navTrigger {
     cursor: pointer;
     width: 30px;
     height: 25px;
@@ -287,7 +337,7 @@ section h2{
     bottom: 0;
 }
 
-.navTrigger i {
+#navTrigger i {
     background-color: #fff;
     border-radius: 2px;
     content: '';
@@ -296,14 +346,14 @@ section h2{
     height: 4px;
 }
 
-.navTrigger i:nth-child(1) {
+#navTrigger i:nth-child(1) {
     -webkit-animation: outT 0.8s backwards;
     animation: outT 0.8s backwards;
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
 }
 
-.navTrigger i:nth-child(2) {
+#navTrigger i:nth-child(2) {
     margin: 5px 0;
     -webkit-animation: outM 0.8s backwards;
     animation: outM 0.8s backwards;
@@ -311,24 +361,24 @@ section h2{
     animation-direction: reverse;
 }
 
-.navTrigger i:nth-child(3) {
+#navTrigger i:nth-child(3) {
     -webkit-animation: outBtm 0.8s backwards;
     animation: outBtm 0.8s backwards;
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
 }
 
-.navTrigger.active i:nth-child(1) {
+#navTrigger.active i:nth-child(1) {
     -webkit-animation: inT 0.8s forwards;
     animation: inT 0.8s forwards;
 }
 
-.navTrigger.active i:nth-child(2) {
+#navTrigger.active i:nth-child(2) {
     -webkit-animation: inM 0.8s forwards;
     animation: inM 0.8s forwards;
 }
 
-.navTrigger.active i:nth-child(3) {
+#navTrigger.active i:nth-child(3) {
     -webkit-animation: inBtm 0.8s forwards;
     animation: inBtm 0.8s forwards;
 }
@@ -428,7 +478,12 @@ section h2{
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
 }
-
+.contact{
+  text-align: center;
+}
+.contact h2{
+  color: white !important;
+}
 @keyframes inBtm {
     0% {
         transform: translateY(0px) rotate(0deg);
@@ -467,7 +522,7 @@ section h2{
 
 .affix {
     padding: 0;
-    background-color: #111;
+    /* background-color: #111; */
 }
 
 
@@ -510,25 +565,59 @@ section h2{
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
   
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
   .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-gap: 5rem;
+    grid-column-gap: 10rem;
+    grid-row-gap: 2rem;
     
   }
 
   .gallery img{
-        height: 20rem;
-        width: 100%;
+        height: 25rem;
+        width: 25rem;
         object-fit: cover;
-        border-radius: 8px;
+        border-radius: 3.5px;
         box-shadow: 0px 0px 15px #fff;
   }
 
  .gallery{
-     margin-left: 10%;
-     margin-right: 10%;
+     margin-left: 5%;
+     margin-right: 5%;
  }
 
 
@@ -571,17 +660,13 @@ section h2{
 
 
 
-.gallery > img:hover {
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-  }
   .site-footer
 {
   background-color:#26272b;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:white;
 }
 .site-footer hr
 {
