@@ -10,7 +10,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body >
     
 
     <section class="home">
@@ -84,15 +84,15 @@
         </div>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <section class="i">
         <div class="nameplates">
         
-          <br>
-          <br>
-          <br>
-            <br>
-            <br>
-            <br>
+   
             <br>
             <br>
             <br>
@@ -229,23 +229,30 @@
 
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
 
 <script src="script.js"></script>
 
+
     <script>
 
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("nav").style.top = "0";
-        } else {
-          document.getElementById("nav").style.top = "-100px";
-        }
-        prevScrollpos = currentScrollPos;
-      }
+
+
+
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } 
+  else {
+    document.getElementById("nav").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
+}
       function onClick(element) {
+        console.log("elem")
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
     }

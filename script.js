@@ -1,14 +1,4 @@
-console.log("ji")
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-150px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+// 
 $('.navTrigger').click(function () {
     $(this).toggleClass('active');
     console.log("Clicked menu");
@@ -18,7 +8,6 @@ $('.navTrigger').click(function () {
 });
 
 var image = document.getElementsByClassName("gallery")[0].getElementsByTagName("img");
-console.log(image)
 // for(var i=0;i<image.length;i++){
 
 // }

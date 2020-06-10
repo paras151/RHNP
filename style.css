@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500");
+
 html,
 body {
     margin: 0;
@@ -14,7 +16,7 @@ body {
     font-family: 'Oswald', sans-serif;    
     background-color: #F5F5F5;
 }
-body,
+/* body, */
 #slider,
 .wrap,
 .slide-content {
@@ -45,7 +47,6 @@ body,
   stroke-width: 10rem;
   color: white;
 } */
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500);
 
 /*------------------------------------*/
 /*------ General Styles for Pen ------*/
@@ -143,15 +144,7 @@ h2{
   margin-right: 30px;
 }
 
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
-/* Navbar section */
-section{
-  /* height: 100vh; */
-  
-  /* width:80%; */
-}
 span{
   font-weight: 800;
 }
@@ -243,10 +236,6 @@ section h2{
     color: #fff;
     line-height: 65px;
     font-size: 2.4rem;
-}
-
-#nav div.main_list ul li a:hover {
-    /* color: #00E676; */
 }
 
 
@@ -616,8 +605,8 @@ section h2{
   }
 
  .gallery{
-     margin-left: 5%;
-     margin-right: 5%;
+     margin-left: 2.5%;
+     margin-right: 8%;
  }
 
 
@@ -735,7 +724,10 @@ section h2{
   margin:0
 }
 @media (max-width:991px)
-{
+{ .gallery{
+  margin-left: 20%;
+  /* margin-right: 0px; */
+}
   .site-footer [class^=col-]
   {
     margin-bottom:30px
