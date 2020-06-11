@@ -187,7 +187,7 @@ section h2{
     /* background-color: red */
 }
 
-#nav div.logo p {
+#nav div.logo h1 {
     float: left;
     font-size: 40px;
     color: white;
