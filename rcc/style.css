@@ -43,6 +43,22 @@ body {
   height: 100%;
 } */
 
+.lights h2{
+  /* border-bottom: 2px solid currentColor; */
+  text-decoration: underline;
+  text-underline-position: under;
+  color: white;
+    text-shadow: 0 0 5px yellow, 0 0 10px rgb(255, 115, 0),
+             0 0 20px rgb(255, 115, 0), 0 0 30px rgb(255, 115, 0),
+             0 0 40px rgb(255, 115, 0);
+}
+.nameplates h2{
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #5c4444;
+    text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #5c4444;
+    /* text-shadow: 2px 2px 2px #CCCCCC; */
+}
 .abt h2{
   stroke-width: 10rem;
   color: white;
@@ -62,7 +78,8 @@ body {
   position: relative;
 }
 h2{
-  font-weight: bolder;
+  font-size: 4rem !important;
+  font-weight: 900;
     /* color: white; */
     color: #26272b;
     text-align: center;
@@ -231,11 +248,15 @@ section h2{
 #nav div.main_list ul li a {
   text-transform: uppercase;
   letter-spacing: 3px;
- font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-family:  'Arial Narrow Bold', sans-serif;
         text-decoration: none;
     color: #fff;
     line-height: 65px;
     font-size: 2.4rem;
+}
+#nav div.main_list ul li :hover {
+  border-bottom:2px solid white;
+  transition: ease-in 0.1s;
 }
 
 
@@ -597,6 +618,7 @@ section h2{
   }
 
   .gallery img{
+        cursor: pointer;
         height: 25rem;
         width: 25rem;
         object-fit: cover;
