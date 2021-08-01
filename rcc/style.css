@@ -5,7 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500");
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 html,
 body {
     margin: 0;
@@ -49,8 +52,8 @@ body {
   text-underline-position: under;
   color: white;
     text-shadow: 0 0 5px yellow, 0 0 10px rgb(255, 115, 0),
-             0 0 20px rgb(255, 115, 0), 0 0 30px rgb(255, 115, 0),
-             0 0 40px rgb(255, 115, 0);
+             0 0 5px rgb(255, 115, 0), 0 0 30px rgb(255, 115, 0),
+             0 0 5px rgb(255, 115, 0);
 }
 .nameplates h2{
   text-decoration: underline;
@@ -59,10 +62,27 @@ body {
     text-shadow: -1px -1px 1px #FFFFFF, 1px 1px 1px #5c4444;
     /* text-shadow: 2px 2px 2px #CCCCCC; */
 }
+
+.heading{
+  font-family: 'Nanum Gothic', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+  transform: scale(1, 1.5);
+  line-height: 8rem;
+  font-size: 42px;
+  letter-spacing: 0.7rem;
+  position: relative;
+  /* margin: 0 auto; */
+  text-align: center;
+  top: 35%;
+  /* margin-top: 10%; */
+}
 .abt h2{
   stroke-width: 10rem;
   color: white;
 } */
+
+
 
 /*------------------------------------*/
 /*------ General Styles for Pen ------*/
@@ -166,14 +186,20 @@ span{
   font-weight: 800;
 }
 .abt{
-  line-height: 200% !important;
+  text-align: center;
+  /* line-height: 200% !important; */
   /* text-align: center; */
-  font-family: cursive !important;
+  
   /* margin-top: 5%; */
   letter-spacing: 0.2rem;
   padding:4% 6%;
   padding-bottom: 5%;
-  background-color: #26272b;
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45),
+      rgba(255, 102, 0, 0.45)
+    ), url(https://images.pexels.com/photos/268976/pexels-photo-268976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  
   margin-left: 10%;
   width: 80%;
   height: 100%;
@@ -182,7 +208,19 @@ span{
 
 }
 .abt h2{
+  line-height: 7rem;
+}
+.abt h3{
+  /* font-family: 'Nanum Gothic', sans-serif; */
+/* font-family: 'WindSong', cursive; */
+font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  line-height: 4rem !important;
+}
+.abt h4{
   color: white;
+  font-size: 35px;
+  line-height: 5rem;
 }
 section p{
   font-size: 20px;
@@ -255,7 +293,7 @@ section h2{
     font-size: 2.4rem;
 }
 #nav div.main_list ul li :hover {
-  border-bottom:2px solid white;
+  border-bottom:2px solid yellow;
   transition: ease-in 0.1s;
 }
 
@@ -265,7 +303,11 @@ section h2{
 .home {
     width: 100%;
     height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45),
+      rgba(255, 102, 0, 0.45)
+    ), url(https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: center top;
 	background-size:cover;
 }
